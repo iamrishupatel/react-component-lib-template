@@ -1,0 +1,43 @@
+@use "../abstracts" as *;
+
+// write your custom sass for buttons here
+
+.art-btn {
+  padding: 0.6rem 1rem;
+  background: transparent;
+  border: 1px solid #1e1e1e;
+  cursor: pointer;
+}
+
+/* variants */
+.art-btn-primary {
+  border: none;
+  background-color: $primary-700;
+  color: white;
+  &:hover {
+    background-color: $primary-600;
+  }
+}
+.art-btn-dashed {
+  border: 1px dashed #1e1e1e;
+}
+.art-btn-disabled {
+  border: 1px dashed #1e1e1e;
+}
+/* shape */
+
+.art-btn-rounded {
+  border-radius: 0.4rem;
+}
+.art-btn-circle {
+  border-radius: 100%;
+}
+
+/* size */
+.art-btn-lg {
+  padding: 1rem 1.6rem;
+}
+.art-btn-sm {
+  padding: 0.4rem 0.6rem;
+  font-size: 0.9rem;
+}
